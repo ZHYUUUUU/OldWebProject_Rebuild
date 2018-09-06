@@ -1,0 +1,108 @@
+create database education_xuebo;
+
+use education_xuebo;
+
+create table expert(
+	expertid char(16) primary key,
+	expertpassword char(16),
+	expertname nvarchar(10),
+	expertsex nvarchar(2),
+	expertidcard char(18),
+	expertintroduce nvarchar(1000),
+	expertresearch nvarchar(1000),
+	experttype nvarchar(10),
+	expertprice double,
+	expertemail varchar(20),
+	expertphone char(11),
+	expertoccupation nvarchar(20),
+	expertaddress nvarchar(20),
+	expertimage varchar(100)
+
+);
+
+create table student(
+	studentid char(16) primary key,
+	studentpassword char(16),
+	studentname nvarchar(10)
+,
+	studenttsex nvarchar(2),
+	studentemail varchar(20),
+	studentphone char(11),
+	studentimage varchar(100),
+	studentintroduce nvarchar(1000)
+);
+
+create table organization(
+
+	organizationid char(16) primary key,
+
+	organizationname nvarchar(50),
+	organizationclass nvarchar(200),
+	organizationadd nvarchar(20),
+	organizationaddress nvarchar(100),
+	organizationclass_price char(15),
+	organizationintroduce nvarchar(500),
+	organizationphone char(15),
+	organizationimage char(100)
+);
+
+create table book(
+	bookid char(17) primary key,
+	expertid char(16),
+	studentid char(16),
+	bookdate datetime,
+	meetdate date,
+	meetaddress nvarchar(50),
+	bookstate int,
+	bookintroduce nvarchar(200),
+	bookassess int,
+	foreign key (expertid) references expert(expertid),
+	foreign key (studentid) references student(studentid)
+);
+
+create table article(
+	articleid char(17) primary key,
+	expertid char(16),
+	publishdate datetime,
+	articletitle nvarchar(50),
+	articletype nvarchar(10),
+	articlecontent nvarchar(5000),
+	foreign key (expertid) references expert(expertid)
+);
+
+create table tribune(
+	tribuneid char(17) primary key,
+	creator nvarchar(20),
+	creatorstate int,
+	studentid char(16),
+	expertid char(16),
+	createdate datetime,
+	tribunetitle nvarchar(100),
+	tribunetheme nvarchar(100),
+	tribunecontent nvarchar(1000)
+);
+
+create table demand(
+	demandid char(17) primary key,
+	studentid char(16),
+	bookid char(17),
+	demandtype nvarchar(10),
+	demanddate datetime,
+	demandmeetdate date,
+	demandmeetaddress nvarchar(20),
+	demandcontent nvarchar(200),
+	demandstate int,
+	foreign key (studentid) references student(studentid)
+);
+
+create table discuss(
+	discussid char(17) primary key,
+	discussname nvarchar(20),
+	nametype int,
+	studentid char(16),
+	expertid char(16),
+	discussdate datetime,
+	discusscontent nvarchar(500),
+	tribuneid char(17),
+	foreign key (tribuneid) references tribune(tribuneid)
+);

@@ -1,0 +1,80 @@
+@CHARSET "UTF-8";
+
+.border{
+	margin-top: -7px; 
+}
+
+.tutor-accomplish{
+	color: #b0b0b0;
+}
+
+.col-md-6{
+	margin-left: 150px;
+	margin-right: 50px;
+	background-color: #fcfaf9;
+}
+
+.col-md-6 ul li{
+	margin-left: 20px;
+}
+
+.blockquote h5 a{   
+	color: black;
+}
+.blockquote h5 a:hover{   
+	text-decoration: none;
+	color: orange;
+}
+
+.c-md-8{
+	text-align: center;
+}
+.c-md-4{
+	width: 350px;
+	height: 200px;
+	background-color: #ece9e8;
+	border: 1px solid #ece9e8;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.about_tip1{
+	margin-top: 30px;
+	margin-left:10px; 
+}
+.about_tip2{
+	margin-left:10px; 
+
+}
+
+.tutor-top{
+	height: 50px;
+	background-color: #fcfaf9;
+	margin-top: -30px;
+}
+
+.btn{
+	margin-top: 30px;
+}
+.btn-1{
+	background-color: orange;
+	border: 1px solid white;// 添加圆角边框
+    border-radius: 25px;
+}
+
+.form-group label {
+	font-size: 16px;
+}
+
+.form-group label:before{
+	content:"*";
+	color: red;
+}
+
+
+.blockquote-footer{
+	position: relative;
+	margin-top: 10px;
+	margin-left: 150px;
+}
+

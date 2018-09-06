@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.blockquote_a{
+	color: black;
+}
+.blockquote_a:hover{
+	text-decoration: none;
+}

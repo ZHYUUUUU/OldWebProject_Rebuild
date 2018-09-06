@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.border{
+    margin-top: -7px; 
+}
+
+.N1 {
+    min-width:900px; 
+    height: 220px;
+    margin-top: 40px;
+    
+}
+.N1 .text1 {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    top: 40px;
+    left: 200px;
+}
+
+.N1 .text {
+    position: relative;
+    color: black;
+    font-size: 16px;
+    top: 25px;
+    left: 200px;
+}
+
+.N1 .text1 a {
+    color: black;
+}
+.N1 .text1 a:hover {
+    color: orange;
+    text-decoration: none;
+}
+.N1 .text2 {
+    position: relative;
+    color: black;
+    font-size: 14px;
+    top: 6px;
+    left: 260px;
+}
+.N1 .text2 .block {
+    display: inline-block;
+    width: 85px;
+    height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: -10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.N1 .text2 .block a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+.N1 .text2 .block a:hover {
+    color: orange;
+}
+// .N1 .city-block{
+// 	display: inline-block;
+// 	width: 85px;
+// 	height: 26px;
+// 	border:1px solid rgba(0, 0, 0, 0.5);
+// 	border-radius:15px;
+// 	margin-left: 10px;
+// 	margin-top: -10px;
+// 	text-align: center;
+// 	vertical-align: middle;
+// }
+// .N1 .city-block ul li ul li{
+// 	.N1 .city-block
+// }
+.firstchild {
+    width:1000px;
+    height: 190px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative;
+    margin-left: 200px;
+    top: -60px;
+    margin-bottom: 10px;
+}
+.firstchild:hover {
+    border: 0px solid ;
+    box-shadow:0px 0px  2px 2px #aaa inset;
+}
+
+.firstchild a{
+    text-decoration: none;
+    color: black;
+}
+
+.firstchild .text3 {
+    margin-top: -80px;
+    margin-left: 160px;
+    margin-bottom: 10px;
+}
+
+.blockquote-footer{
+    margin-left: 500px;
+    margin-top: 30px;
+    font-size: 16px;
+    
+}

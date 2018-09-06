@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+
+.personer-imformation{
+	background-image: url(../images/bg.png);
+	height: 730px;
+}
+
+.img-center{
+	margin: auto auto;
+	padding-top: 100px;
+	padding-bottom: 20px;
+}
+
+.page-footer{
+	margin-bottom: 10px;
+}
+
+.ul-center{
+	width: 300px;
+	position: relative;
+/* 	margin: 50px 0px 50px 100px; */
+	padding-top: 10px;
+	padding-left: 40px;
+	margin: 40px auto 40px auto;
+}
+
+.card{
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cont-a1{   
+	margin-left: 14px;
+	margin-top: -7px;
+}
+// 进一步调整导航栏选项的位置
+
+.form-group label:before{
+	content: "*";
+	color: red;
+}

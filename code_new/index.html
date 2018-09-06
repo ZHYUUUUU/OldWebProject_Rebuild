@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>
+        个人主页
+    </title>
+    <meta content="Source code generated using layoutit.com" name="description">
+    <meta content="LayoutIt!" name="author">
+    <link href="images/xuebo.jpg" rel="shortcut icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/head.css" rel="stylesheet">
+    <script src="js/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <script src="js/scripts.js">
+    </script>
+    <script>
+    function check(checkedRadio) {
+        checkedRadio.checked = true;
+        if (checkedRadio.value == '1') {
+            document.getElementById("ipAddress").style.display = 'none';
+        } else if (checkedRadio.value == '2') {
+            document.getElementById("ipAddress").style.display = '';
+        }
+    }
+    </script>
+    </link>
+    </link>
+    </link>
+    </link>
+    </meta>
+    </meta>
+    </meta>
+    </meta>
+    </meta>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row guding" id="cont-acont">
+            <div class="cont-a1">
+                <!-- 以上这div用于进一步调整导航栏选项的位置 -->
+                <div id="cont-a">
+                    <ul>
+                        <li class="border">
+                            <a href="list-article.html" target="_blank">
+                                    专家文章
+                                </a>
+                        </li>
+                        <li class="border">
+                            <a href="student_demand.html" target="_blank">
+                                    学员需求
+                                </a>
+                        </li>
+                        <li class="border">
+                            <a href="expert_theme_tribune.html" target="_blank">
+                                    主题论坛
+                                </a>
+                        </li>
+                        <li class="border">
+                            <a href="#" target="_blank">
+                                    业内行情
+                                </a>
+                        </li>
+                        <li style="float:right;">
+                            <a href="page.html">
+                                    退出登录
+                                </a>
+                        </li>
+                        <li style="float:right;">
+                            <a href="index.html">
+                                    个人主页
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 学博logo -->
+                <a href="expert_homepage.html" target="_blank">
+                        <img src="images/log4.png" style="position:fixed; left:125px; top:10px;" width="40px"/>
+                    </a>
+            </div>
+        </div>
+        <div class="row">
+            <!-- 左边栏为专家个人信息栏 -->
+            <div class="col-md-3 personer-imformation" style="z-index: 1300">
+                <div class="row">
+                    <div class="img-center">
+                        <img alt="Bootstrap Image Preview" class="rounded-circle" src="images/zhangxiaolong.jpg" />
+                    </div>
+                </div>
+                <h4 class="text-center text-white">
+                        张小龙
+                    </h4>
+                <div class="text-white text-center card" style="padding: 10px; margin-top: 40px;margin-bottom: 40px">
+                    腾讯公司高级副总裁
+                </div>
+                <div class="page-footer">
+                    <address class="text-center text-white">
+                        <img alt="" src="ui/address.png">
+                        <strong>
+                                    湖南
+                                </strong>
+                        <br/>
+                        <abbr title="Phone">
+                            P:
+                        </abbr>
+                        xxxxxxxxxx
+                        </img>
+                    </address>
+                </div>
+                <div class="card" style="padding-top: 10px; margin-top: 150px">
+                    <h6 class="text-center text-white">
+                            账号：xxxxxxxx
+                        </h6>
+                    <h6 class="text-center text-white">
+                            密码：*********
+                        </h6>
+                    <a class="btn btn-md" data-toggle="modal" href="#modal-container-192372" id="modal-192372" role="button">
+                            修改密码
+                        </a>
+                </div>
+                <!-- 修改密码弹出框 -->
+                <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modal-container-192372" role="dialog" style="padding-top: 150px">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="myModalLabel">
+                                        修改密码
+                                    </h5>
+                                <button class="close" data-dismiss="modal" type="button">
+                                    <span aria-hidden="true">
+                                            ×
+                                        </span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword1">
+                                            原密码
+                                        </label>
+                                        <input class="form-control" id="exampleInputPassword1" type="password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword2">
+                                            新密码
+                                        </label>
+                                        <input class="form-control" id="exampleInputPassword2" type="password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputPassword3">
+                                            确认新密码
+                                        </label>
+                                        <input class="form-control" id="exampleInputPassword3" type="password" />
+                                    </div>
+                                    <button class="btn btn-primary" type="submit">
+                                        确定修改
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右边栏为专家的功能栏 -->
+            <div class="col-md-8" style="margin-top: 100px; z-index: 1200;">
+                <div class="tabbable" id="tabs-244684">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active show" data-toggle="tab" href="#panel-564201">
+                                    简介
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel-557747">
+                                    文章
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel-557760">
+                                    预约详情
+                                </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active show" id="panel-564201">
+                            <br/>
+                            <dl>
+                                <dt>
+                                    个人简介
+                                </dt>
+                                <dd class="card">
+                                    张小龙，1969年12月3日生于湖南省邵阳市洞口县，Foxmail创始人，微信创始人，腾讯公司高级副总裁。张小龙毕业于华中科技大学电信系，分别获得学士、硕士学位。曾开发国产电子邮件客户端——Foxmail，加盟腾讯公司后开发腾讯微信，被誉为“微信之父”，被《华尔街日报》评为“2012中国创新人物”。主要负责腾讯公司广州研发部的管理工作，同时参与腾讯公司重大创新项目的管理和评审工作。
+                                </dd>
+                                <dt style="padding-top: 20px">
+                                    研究成果
+                                </dt>
+                                <dd class="card">
+                                    开发国产电子邮件客户端——Foxmail.
+                                    <br/> 开发腾讯微信，被誉为“微信之父”.
+                                </dd>
+                                <dt style="padding-top: 20px">
+                                    教育方向
+                                </dt>
+                                <dd class="card">
+                                    前端开发.
+                                </dd>
+                                <dt style="padding-top: 20px">
+                                    预约价格
+                                </dt>
+                                <dd class="card">
+                                    400/天.
+                                </dd>
+                            </dl>
+                            <a class="btn btn-primary btn-md" data-toggle="modal" href="#modal-container-192373" id="modal-192373" role="button">
+                                    修改个人信息
+                                </a>
+                            <!-- 修改个人信息弹出框 -->
+                            <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modal-container-192373" role="dialog" style="padding-top: 90px">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="myModalLabel">
+                                                    修改个人信息
+                                                </h5>
+                                            <button class="close" data-dismiss="modal" type="button">
+                                                <span aria-hidden="true">
+                                                        ×
+                                                    </span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="exampleInputname1">
+                                                        姓名
+                                                    </label>
+                                                    <input class="form-control" id="exampleInputname1" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">
+                                                        邮箱
+                                                    </label>
+                                                    <input class="form-control" id="exampleInputEmail1" type="email" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputadd1">
+                                                        地址
+                                                    </label>
+                                                    <input class="form-control" id="exampleInputadd1" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputoccupation1">
+                                                        职位
+                                                    </label>
+                                                    <input class="form-control" id="exampleInputoccupation1" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputTel1">
+                                                        手机号码
+                                                    </label>
+                                                    <input class="form-control" id="exampleInputTel1" type="tel" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleTextarea1">
+                                                        个人简介
+                                                    </label>
+                                                    <textarea cols="56" id="exampleTextarea1" rows="4">
+                                                    </textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleText1">
+                                                        研究成果
+                                                    </label>
+                                                    <input class="form-control" id="exampleText1" type="text" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleText2">
+                                                        教育方向
+                                                    </label>
+                                                    <select>
+                                                        <!-- select为下拉菜单标签， 比select好的有datalist标签-->
+                                                        <option>
+                                                            HTML/CSS
+                                                        </option>
+                                                        <!-- 默认选项为第一个选项 -->
+                                                        <option>
+                                                            后端开发
+                                                        </option>
+                                                        <option>
+                                                            服务端
+                                                        </option>
+                                                        <!-- 使用selected="selected"改变默认选项 -->
+                                                        <option>
+                                                            框架
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleText3">
+                                                        预约价格
+                                                    </label>
+                                                    <input class="form-control" id="exampleText3" type="text" />
+                                                </div>
+                                                <button class="btn btn-primary " type="submit">
+                                                    提交修改
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="panel-557747">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>
+                                            文章标题
+                                        </th>
+                                        <th>
+                                            发布时间
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <a href="article_read.html" target="_blank">
+                                                    微信公众号将单独发APP，要对作者进行赞赏不是公众号
+                                                </a>
+                                        </td>
+                                        <td>
+                                            01/04/2012
+                                        </td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                    TB - Monthly
+                                                </a>
+                                        </td>
+                                        <td>
+                                            01/04/2012
+                                        </td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                    TB - Monthly
+                                                </a>
+                                        </td>
+                                        <td>
+                                            02/04/2012
+                                        </td>
+                                    </tr>
+                                    <tr class="table-warning">
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                    TB - Monthly
+                                                </a>
+                                        </td>
+                                        <td>
+                                            03/04/2012
+                                        </td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <td>
+                                            5
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                    TB - Monthly
+                                                </a>
+                                        </td>
+                                        <td>
+                                            04/04/2012
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a class="btn btn-primary btn-md" href="article_write.html" target="_blank">
+                                    发布文章
+                                </a>
+                        </div>
+                        <div class="tab-pane" id="panel-557760">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>
+                                            学员姓名
+                                        </th>
+                                        <th>
+                                            预约时间
+                                        </th>
+                                        <th>
+                                            预约状态
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            xxx
+                                        </td>
+                                        <td>
+                                            01/04/2012
+                                        </td>
+                                        <td>
+                                            未接受
+                                        </td>
+                                        <td>
+                                            <a class="btn " data-toggle="modal" href="#modal-container-817139" id="modal-817139" role="button" style="color: white; background-color: #0275d8 ;padding:5px ;font-size: 5px;">
+                                                    查看预约
+                                                </a>
+                                            <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modal-container-817139" role="dialog">
+                                                <div class="modal-dialog" role="document" style="position: relative;margin-top: 80px;">
+                                                    <!-- 调整弹出小窗口的位置 -->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="myModalLabel">
+                                                                    学员预约
+                                                                </h5>
+                                                            <button class="close" data-dismiss="modal" type="button">
+                                                                <span aria-hidden="true">
+                                                                        ×
+                                                                    </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputTime1">
+                                                                        见面时间:
+                                                                    </label>
+                                                                    <input class="form-control" id="exampleInputTime1" readonly="readonly" style="font-size: 16px;" type="text" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputadd1">
+                                                                        见面地点:
+                                                                    </label>
+                                                                    <input class="form-control" id="exampleInputadd1" readonly="readonly" type="text" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputTel1">
+                                                                        联系电话:
+                                                                    </label>
+                                                                    <input class="form-control" id="exampleInputTel1" readonly="readonly" type="text" />
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="exampleInputContent1">
+                                                                        上课内容:
+                                                                    </label>
+                                                                    <textarea cols="56" id="exampleInputContent1" readonly="readonly" rows="4" style="font-size: 16px;">
+                                                                    </textarea>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>
+                                                                        是否接受
+                                                                    </label>
+                                                                    <input checked="checked" id="yes" name="expert_option" onclick="check(this)" type="radio" value="1" /> 是
+                                                                    <input id="no" name="expert_option" onclick="check(this)" type="radio" value="2" /> 否
+                                                                    <div>
+                                                                        <textarea cols="45" id="ipAddress" name="_ipAddress" rows="3" style="display: none;">
+                                                                            请输入拒绝理由
+                                                                        </textarea>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn btn-primary " type="submit">
+                                                                    提交
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <a class="btn " data-toggle="modal" href="#modal-container-813" id="modal-813" role="button" style="color: white; background-color: #0275d8 ;padding:5px ;font-size: 5px;">
+                                                    完成预约
+                                                </a>
+                                            <div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modal-container-813" role="dialog">
+                                                <div class="modal-dialog" role="document" style="position: relative;margin-top: 80px;">
+                                                    <!-- 调整弹出小窗口的位置 -->
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="myModalLabel">
+                                                                    完成预约
+                                                                </h5>
+                                                            <button class="close" data-dismiss="modal" type="button">
+                                                                <span aria-hidden="true">
+                                                                        ×
+                                                                    </span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <label>
+                                                                        是否已完成
+                                                                    </label>
+                                                                    <input checked="checked" id="yes" name="expert_option" type="radio" value="1" /> 是
+                                                                    <input id="no" name="expert_option" type="radio" value="2" />否
+                                                                </div>
+                                                                <button class="btn btn-primary " type="submit">
+                                                                    确定
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

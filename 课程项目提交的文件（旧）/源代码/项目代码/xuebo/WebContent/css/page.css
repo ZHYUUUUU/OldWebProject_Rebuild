@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+
+.page_nav {
+    background-color: rgba(23, 23, 23, 0.5);
+    width: 100%;
+    min-width: 1360px;
+    height: 70px;
+    position: relative;
+    top: -10px;
+/*     left: -10px; */
+}
+a {
+    text-decoration: none;
+ }
+
+.page_a {
+    position: relative;
+    width: 80px;
+    height: 70px;
+    font-size: 14px;
+    left: 230px;
+}
+.page_b {
+    position: relative;
+    width: 200px;
+    height: 70px;
+    font-size: 14px;
+    left: 800px;
+    top: -27px;
+}
+.page_bg {
+    height: 650px;
+    background-image: url(../images/page.jpg);
+    background-repeat: repeat;
+    /*表示平铺*/
+    margin-left: -20px;
+    margin-right: 0px;
+    margin-top: -80px;
+}
+.page_kuai {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid;
+    position: absolute;
+    left: 280px;
+    top: 150px;
+}
+
+.page_kuai .r{
+	width: 330px;
+	height: 370px;
+	background-color: white;
+	position: relative;
+	top: -270px;
+	left: 455px;
+}
+
+.page_kuai .r .xueyuan{
+	margin-left: 70px;
+	line-height: 60px;
+}
+
+.page_kuai .r .zhuanjia{
+	margin-left: 70px;
+}
+
+// .page_kuai .r .zhuanjia:hover{
+//     border-bottom: 2px solid rgba(23,23,23,0.4); 
+//     padding-bottom: 8px;
+// }
+
+
+
+.form1{
+	line-height: 60px;
+	text-align: center;
+	margin-top: 5px;
+}
+
+input{
+	width: 265px;
+	height: 35px;
+	
+}
+
+.choice2{
+	display: none;
+}
+
+
+
