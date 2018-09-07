@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    .navbar {
+        margin-bottom: 0px;
+        .container {
+            a {
+                display: inline-block;
+                >i {
+                    >img {
+                        width: 26px;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#main_ad {
+    .carousel-inner {
+        .item {
+            // background-image: url('../img/banner_1920x410_2.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        @media (min-width: 768px) {
+            .item {
+                height: 410px;
+            }
+        }
+    }
+}
+
+#search {
+    .container {
+        .row {
+            >div {
+                margin-top: -20px;
+                border: 1px solid #e0e0e0;
+                background-color: #fff;
+                border-radius: 30px;
+                padding: 10px;
+                form{
+                    select{
+                        font-size: 16px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

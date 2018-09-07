@@ -17,11 +17,10 @@ $(function () {
 		});
 	}
 	$(window).on('resize',resize).trigger('resize');
-});
 
-$(document).ready(function(){
+	// 注册点击事件，为学员登录、专家登录切换不同div
 	$('#login-s').click(function(event) {
-		$('.login-student').show();
+		$('.login-student').show('fast');
 		$('.login-register-s').show();
 		$('.login-expert').hide();
 		$('.login-register-e').hide();
@@ -33,7 +32,7 @@ $(document).ready(function(){
 		});
 	});
 	$('#login-e').click(function(event) {
-		$('.login-expert').show();
+		$('.login-expert').show('fast');
 		$('.login-register-e').show();
 		$('.login-student').hide();
 		$('.login-register-s').hide();
@@ -45,3 +44,30 @@ $(document).ready(function(){
 		});
 	});
 });
+
+// $(document).ready(function(){
+// 	$('#login-s').click(function(event) {
+// 		$('.login-student').show('fast');
+// 		$('.login-register-s').show();
+// 		$('.login-expert').hide();
+// 		$('.login-register-e').hide();
+// 		$(this).css({
+// 			borderBottom: '2px solid #e92322'
+// 		});
+// 		$('#login-e').css({
+// 			borderBottom: 'none'
+// 		});
+// 	});
+// 	$('#login-e').click(function(event) {
+// 		$('.login-expert').show('fast');
+// 		$('.login-register-e').show();
+// 		$('.login-student').hide();
+// 		$('.login-register-s').hide();
+// 		$(this).css({
+// 			borderBottom: '2px solid #e92322'
+// 		});
+// 		$('#login-s').css({
+// 			borderBottom: 'none'
+// 		});
+// 	});
+// });
